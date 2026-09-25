@@ -1,0 +1,13 @@
+SELECT
+    students.name,
+    courses.course_name
+FROM students
+RIGHT JOIN courses
+ON students.course_id = courses.course_id;
+
+OUTPUT:
+name  | course_name
+------|------------
+Rahul | Python
+Priya | SQL
+Arjun | Java
